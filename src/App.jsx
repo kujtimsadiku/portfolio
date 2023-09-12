@@ -1,14 +1,15 @@
-// import { useState } from "react";
 import "./App.css";
+import Footer from "./components/Footer";
+import NavigationBar from "./components/NavigationBar";
 
 function App() {
   return (
-    <>
-      <div>navigation bar</div>
+    <div className="container">
+      <NavigationBar />
       <div>Front end</div>
       <div>content</div>
-      <div>footer</div>
-    </>
+      <Footer />
+    </div>
   );
 }
 
