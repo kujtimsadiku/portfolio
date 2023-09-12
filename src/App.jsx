@@ -6,6 +6,8 @@ function App() {
     <>
       <div>navigation bar</div>
       <div>Front end</div>
+      <div>content</div>
+      <div>footer</div>
     </>
   );
 }
