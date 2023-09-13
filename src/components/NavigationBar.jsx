@@ -1,22 +1,35 @@
 const NavigationBar = () => {
+  const padding = {
+    padding: 5,
+  };
+
   return (
-    <div className="navigation-bar">
-      <div>
-        <p>Home</p>
-      </div>
-      <div>
-        <p>CV</p>
-      </div>
-      <div>
-        <p>Project</p>
-      </div>
-      <div>
-        <p>Experience</p>
-      </div>
-      <div>
-        <p>Contact me</p>
-      </div>
-    </div>
+    <>
+      <header className="navigation-bar">
+        <nav>
+          <ul className="wrapper-nav">
+            <li>
+              <a style={padding}>About</a>
+            </li>
+            <li>
+              <a style={padding}>Experience</a>
+            </li>
+            <li>
+              <a style={padding}>Projects</a>
+            </li>
+            <li>
+              <a style={padding}>Education</a>
+            </li>
+            <li>
+              <a style={padding}>CV</a>
+            </li>
+            <li>
+              <a style={padding}>Contact me</a>
+            </li>
+          </ul>
+        </nav>
+      </header>
+    </>
   );
 };
 

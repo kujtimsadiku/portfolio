@@ -6,13 +6,14 @@
 .container {
   width: 100%;
   height: 100vh;
+  background: greenyellow;
 }
 
 .navigation-bar {
-  display: inline-flex;
   background: violet;
-  justify-content: flex-end;
   width: 100%;
+  top: -100px;
+  z-index: 2;
 }
 
 .navigation-bar p {
@@ -20,7 +21,22 @@
 }
 
 .footer {
-  display: flex;
+  display: grid;
+  grid-area: auto;
+  justify-content: start;
+  align-content: end;
   background: blueviolet;
+}
+
+nav ul li {
+  list-style: none;
+}
+
+.wrapper-nav {
+  display: flex;
   justify-content: center;
+}
+
+a {
+  cursor: pointer;
 }
