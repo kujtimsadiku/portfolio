@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Inkscape (http://www.inkscape.org/) -->
+
+<svg
+   width="210mm"
+   height="297mm"
+   viewBox="0 0 210 297"
+   version="1.1"
+   id="svg1"
+   inkscape:version="1.3 (0e150ed, 2023-07-21)"
+   sodipodi:docname="kujtim.svg"
+   xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
+   xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
+   xmlns="http://www.w3.org/2000/svg"
+   xmlns:svg="http://www.w3.org/2000/svg">
+  <sodipodi:namedview
+     id="namedview1"
+     pagecolor="#ffffff"
+     bordercolor="#999999"
+     borderopacity="1"
+     inkscape:showpageshadow="2"
+     inkscape:pageopacity="0"
+     inkscape:pagecheckerboard="0"
+     inkscape:deskcolor="#d1d1d1"
+     inkscape:document-units="mm"
+     showguides="false"
+     inkscape:zoom="0.36408727"
+     inkscape:cx="245.82019"
+     inkscape:cy="541.07907"
+     inkscape:window-width="1440"
+     inkscape:window-height="847"
+     inkscape:window-x="0"
+     inkscape:window-y="25"
+     inkscape:window-maximized="1"
+     inkscape:current-layer="layer1">
+    <sodipodi:guide
+       position="-49.080507,553.72883"
+       orientation="0,-1"
+       id="guide1"
+       inkscape:locked="false" />
+  </sodipodi:namedview>
+  <defs
+     id="defs1">
+    <rect
+       x="57.077272"
+       y="418.56666"
+       width="694.44014"
+       height="556.5034"
+       id="rect4" />
+    <rect
+       x="47.564393"
+       y="442.34886"
+       width="703.95302"
+       height="580.2856"
+       id="rect3" />
+    <rect
+       x="57.077272"
+       y="275.87348"
+       width="780.05605"
+       height="523.20833"
+       id="rect2" />
+    <rect
+       x="133.1803"
+       y="390.02803"
+       width="546.99052"
+       height="375.75871"
+       id="rect1" />
+  </defs>
+  <g
+     inkscape:label="Layer 1"
+     inkscape:groupmode="layer"
+     id="layer1"
+     style="opacity:1">
+    <text
+       xml:space="preserve"
+       transform="matrix(0.29188699,0,0,0.26458333,2.6555278,-85.809638)"
+       id="text4"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:192px;font-family:'.New York';-inkscape-font-specification:'.New York';white-space:pre;shape-inside:url(#rect4);display:inline;fill:#151515;fill-opacity:0.780876;opacity:1"><tspan
+         x="57.078125"
+         y="595.7579"
+         id="tspan1">KUJ</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:53.3568px;font-family:'.New York';-inkscape-font-specification:'.New York';fill:#6868ee;stroke-width:0.2779;fill-opacity:0.63745022"
+       x="101.72678"
+       y="75.432625"
+       id="text7"
+       transform="scale(1.0503309,0.95208091)"><tspan
+         sodipodi:role="line"
+         id="tspan7"
+         style="fill:#6868ee;stroke-width:0.2779;fill-opacity:0.63745022"
+         x="101.72678"
+         y="75.432625">TIM</tspan></text>
+  </g>
+</svg>
