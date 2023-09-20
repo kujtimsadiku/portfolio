@@ -1,5 +1,3 @@
-import React from "react";
-
 import {
   About,
   Education,
@@ -18,9 +16,9 @@ const App = () => {
       <Navbar />
       <Header />
       <About />
-      <Skills />
-      <Experiences />
       <Projects />
+      <Experiences />
+      <Skills />
       <Education />
       <Footer />
     </div>
