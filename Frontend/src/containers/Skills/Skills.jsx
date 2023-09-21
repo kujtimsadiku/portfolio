@@ -1,12 +1,13 @@
 /* eslint-disable no-unused-vars */
-import { useState, useEffect } from "react";
-import { Tooltip } from "react-tooltip";
+import React, { useState, useEffect } from "react";
 import { motion } from "framer-motion";
+import { Tooltip as ReactTooltip } from "react-tooltip";
 
-import { AppWrap } from "../../wrapper";
+import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./Skills.scss";
+import "react-tooltip/dist/react-tooltip.css";
 
 const Skills = () => {
   const [experience, setExperience] = useState([]);
@@ -60,20 +61,21 @@ const Skills = () => {
                       transition={{ duration: 0.5 }}
                       className="app__skills-exp-work"
                       data-tip
-                      data-for={work.name}
+                      data-tooltip-id={work.name}
                       key={work.name}
                     >
                       <h4 className="bold-text">{work.name}</h4>
                       <p className="p-text">{work.company}</p>
                     </motion.div>
-                    <Tooltip
+                    <ReactTooltip
                       id={work.name}
                       effect="solid"
                       arrowColor="#fff"
                       className="skills-tooltip"
+                      data-html={true}
                     >
                       {work.desc}
-                    </Tooltip>
+                    </ReactTooltip>
                   </>
                 ))}
               </motion.div>
@@ -85,4 +87,8 @@ const Skills = () => {
   );
 };
 
-export default Skills;
+export default AppWrap(
+  MotionWrap(Skills, "app__skills"),
+  "skills",
+  "app__whitebg"
+);

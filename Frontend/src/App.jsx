@@ -1,7 +1,6 @@
 import {
   About,
   Education,
-  Experiences,
   Footer,
   Header,
   Projects,
@@ -17,7 +16,6 @@ const App = () => {
       <Header />
       <About />
       <Projects />
-      <Experiences />
       <Skills />
       <Education />
       <Footer />
