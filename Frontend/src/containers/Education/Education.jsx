@@ -9,7 +9,7 @@ import { urlFor, client } from "../../client";
 import "./Education.scss";
 import "react-tooltip/dist/react-tooltip.css";
 
-const Education = () => {
+const EducationComp = () => {
   const [education, setEducation] = useState([]);
   const [skills, setSkills] = useState([]);
   useEffect(() => {
@@ -93,8 +93,8 @@ const Education = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Education, "app__skills"),
+export const Education = AppWrap(
+  MotionWrap(EducationComp, "app__skills"),
   "educations",
   "app__whitebg"
 );

@@ -6,7 +6,7 @@ import { client } from "../../client";
 
 import "./Footer.scss";
 
-const Footer = () => {
+const FooterComp = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -40,7 +40,7 @@ const Footer = () => {
   };
 
   return (
-    <>
+    <React.Fragment>
       <h2 className="head-text">
         Feel free <span>to contact</span> me.
       </h2>
@@ -98,12 +98,12 @@ const Footer = () => {
           <h2 className="head-text">Thank you for getting in touch!</h2>
         </div>
       )}
-    </>
+    </React.Fragment>
   );
 };
 
-export default AppWrap(
-  MotionWrap(Footer, "app__footer"),
+export const Footer = AppWrap(
+  MotionWrap(FooterComp, "app__footer"),
   "contact",
   "app__whitebg"
 );

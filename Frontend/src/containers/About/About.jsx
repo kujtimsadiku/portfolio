@@ -43,7 +43,7 @@ const AboutMeSection = () => {
   );
 };
 
-const About = () => {
+const AboutComp = () => {
   const [abouts, setAbouts] = useState([]);
 
   useEffect(() => {
@@ -62,7 +62,7 @@ const About = () => {
       <div className="app__profiles">
         {abouts.map((about, index) => (
           <motion.div
-            whileInView={{ oppacity: 1 }}
+            whileInView={{ opacity: 1 }}
             whileHover={{ scale: 1.1 }}
             transition={{ duration: 0.5, type: "tween" }}
             className="app__profile-item"
@@ -82,4 +82,8 @@ const About = () => {
   );
 };
 
-export default AppWrap(MotionWrap(About, "app_about"), "about", "app__whitebg");
+export const About = AppWrap(
+  MotionWrap(AboutComp, "app_about"),
+  "about",
+  "app__whitebg"
+);

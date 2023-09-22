@@ -8,7 +8,7 @@ import { client } from "../../client";
 import "react-tooltip/dist/react-tooltip.css";
 import "./Work.scss";
 
-const Work = () => {
+const WorkComp = () => {
   const [experience, setExperience] = useState([]);
 
   useEffect(() => {
@@ -63,4 +63,8 @@ const Work = () => {
   );
 };
 
-export default AppWrap(MotionWrap(Work, "app__work"), "work", "app__graybg");
+export const Work = AppWrap(
+  MotionWrap(WorkComp, "app__work"),
+  "work",
+  "app__graybg"
+);

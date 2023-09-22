@@ -7,9 +7,9 @@ import { urlFor, client } from "../../client";
 
 import "./Projects.scss";
 
-const Projects = () => {
+const ProjectsComp = () => {
   const [activeFilter, setActiveFilter] = useState("All");
-  const [animateCard, setAnimatedCard] = useState({ y: 0, oppacity: 1 });
+  const [animateCard, setAnimatedCard] = useState({ y: 0, opacity: 1 });
   const [projects, setProjects] = useState([]);
   const [filterProject, setFilterProject] = useState([]);
 
@@ -131,8 +131,8 @@ const Projects = () => {
   );
 };
 
-export default AppWrap(
-  MotionWrap(Projects, "app__projects"),
+export const Projects = AppWrap(
+  MotionWrap(ProjectsComp, "app__projects"),
   "projects",
   "app__primarybg"
 );

@@ -7,7 +7,7 @@ import "./Header.scss";
 const scaleVariants = {
   whileInView: {
     scale: [0, 1],
-    oppacity: [0, 1],
+    opacity: [0, 1],
     transition: {
       duration: 1,
       ease: "easeInOut",
@@ -15,11 +15,11 @@ const scaleVariants = {
   },
 };
 
-const Header = () => {
+const HeaderComp = () => {
   return (
     <div className="app__header app__flex">
       <motion.div
-        whileInView={{ x: [-100, 0], oppacity: [0, 1] }}
+        whileInView={{ x: [-100, 0], opacity: [0, 1] }}
         transition={{ duration: 2 }}
         className="app__header-info"
       >
@@ -38,7 +38,7 @@ const Header = () => {
       </motion.div>
 
       <motion.div
-        whileInView={{ oppacity: [0, 1] }}
+        whileInView={{ opacity: [0, 1] }}
         transition={{ duration: 0.5, delayChildren: 0.5 }}
         className="app__header-img"
       >
@@ -67,4 +67,4 @@ const Header = () => {
   );
 };
 
-export default AppWrap(Header, "home");
+export const Header = AppWrap(HeaderComp, "home");
