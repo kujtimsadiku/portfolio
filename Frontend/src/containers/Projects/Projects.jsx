@@ -77,30 +77,42 @@ const Projects = () => {
                 }}
                 className="app__project-hover app__flex"
               >
-                <a href={project.projectLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{
-                      duration: 0.5,
-                    }}
-                    className="app__flex"
+                {project.projectLink ? (
+                  <a
+                    href={project.projectLink}
+                    target="_blank"
+                    rel="noreferrer"
                   >
-                    <AiFillEye />
-                  </motion.div>
-                </a>
-                <a href={project.codeLink} target="_blank" rel="noreferrer">
-                  <motion.div
-                    whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.9] }}
-                    transition={{
-                      duration: 0.5,
-                    }}
-                    className="app__flex"
-                  >
-                    <AiFillGithub />
-                  </motion.div>
-                </a>
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{
+                        duration: 0.5,
+                      }}
+                      className="app__flex"
+                    >
+                      <AiFillEye />
+                    </motion.div>
+                  </a>
+                ) : (
+                  ""
+                )}
+                {project.codeLink ? (
+                  <a href={project.codeLink} target="_blank" rel="noreferrer">
+                    <motion.div
+                      whileInView={{ scale: [0, 1] }}
+                      whileHover={{ scale: [1, 0.9] }}
+                      transition={{
+                        duration: 0.5,
+                      }}
+                      className="app__flex"
+                    >
+                      <AiFillGithub />
+                    </motion.div>
+                  </a>
+                ) : (
+                  ""
+                )}
               </motion.div>
             </div>
             <div className="app__project-content app__flex">
