@@ -14,6 +14,7 @@ import node from "../assets/node.png";
 import python from "../assets/python.png";
 import react from "../assets/react.png";
 import redux from "../assets/redux.png";
+import vite from "../assets/vite.svg";
 import sass from "../assets/sass.png";
 import typescript from "../assets/typescript.png";
 import vue from "../assets/vue.png";
@@ -73,4 +74,5 @@ export default {
   spotify,
   kujtim,
   kujtimProfile,
+  vite,
 };
