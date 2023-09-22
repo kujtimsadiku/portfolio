@@ -41,6 +41,10 @@
     background-color: var(--secondary-color);
     color: #fff;
   }
+
+  @media screen and (max-width: 750px) {
+    justify-content: center;
+  }
 }
 
 .app__project-portfolio {

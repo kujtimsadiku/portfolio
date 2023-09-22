@@ -4,6 +4,38 @@
   flex-direction: column;
 }
 
+.app__about-me {
+  display: flex;
+  flex-direction: column;
+
+  h4 {
+    font-size: 2rem;
+    font-weight: 300;
+    text-align: center;
+    color: var(--black-color);
+    text-transform: capitalize;
+    margin-top: 1.75rem;
+  }
+
+  p {
+    margin: 1.25rem 1.25rem 0 0;
+    max-height: 200px;
+    max-width: 500px;
+    overflow: auto;
+    text-align: flex-start;
+    text-transform: none;
+  }
+
+  @media screen and (max-width: 500px) {
+    flex-wrap: wrap;
+
+    p {
+      max-height: none;
+      overflow: visible;
+    }
+  }
+}
+
 .app__profiles {
   display: flex;
   justify-content: center;
