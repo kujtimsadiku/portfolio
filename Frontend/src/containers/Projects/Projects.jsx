@@ -45,7 +45,7 @@ const Projects = () => {
         My <span>Projects</span>
       </h2>
       <div className="app__projects-filter">
-        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+        {["UI/UX", "Games", "Graphics", "Algorithms", "React JS", "All"].map(
           (item, index) => (
             <div
               key={index}

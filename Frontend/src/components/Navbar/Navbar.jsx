@@ -14,7 +14,7 @@ const Navbar = () => {
         <img src={images.kujtim} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "work", "projects", "skills", "contact"].map(
+        {["home", "about", "projects", "educations", "work", "contact"].map(
           (item) => (
             <li className="app__flex p-text" key={`link-${item}`}>
               <div />
@@ -33,15 +33,20 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {["home", "about", "work", "projects", "skills", "contact"].map(
-                (item) => (
-                  <li key={item}>
-                    <a href={`#${item}`} onClick={() => setToggle(false)}>
-                      {item}
-                    </a>
-                  </li>
-                )
-              )}
+              {[
+                "home",
+                "about",
+                "work",
+                "projects",
+                "education",
+                "contact",
+              ].map((item) => (
+                <li key={item}>
+                  <a href={`#${item}`} onClick={() => setToggle(false)}>
+                    {item}
+                  </a>
+                </li>
+              ))}
             </ul>
           </motion.div>
         )}
