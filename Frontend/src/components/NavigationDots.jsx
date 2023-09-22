@@ -1,7 +1,7 @@
 const NavigationDots = (active) => {
   return (
     <div className="app__navigation">
-      {["home", "about", "work", "project", "skills", "contact"].map(
+      {["home", "about", "work", "projects", "skills", "contact"].map(
         (item, index) => (
           <a
             href={`#${item}`}
