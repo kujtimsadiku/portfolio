@@ -1,5 +1,6 @@
 import { About, Work, Footer, Header, Projects, Education } from "./containers";
 import { Navbar } from "./components";
+
 import "./App.scss";
 
 const App = () => {

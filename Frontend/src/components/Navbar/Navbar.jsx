@@ -23,6 +23,7 @@ const Navbar = () => {
           )
         )}
       </ul>
+      {/* <button className="app__navbar-lang">LANG</button> */}
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
 

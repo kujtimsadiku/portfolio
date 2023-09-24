@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 import { urlFor, client } from "../../client";
+import { useTranslation } from "react-i18next";
 
 import "./About.scss";
 
@@ -19,9 +20,9 @@ const AboutMeSection = () => {
       </h2>
 
       <h4 className="head-text">
-        About me
         <p className="p-text">
-          I embarked on my coding journey in 2022 with no prior experience.
+          {/* {t.} */}
+          {/* I embarked on my coding journey in 2022 with no prior experience.
           <br />
           My foundation was forged at Hive Helsinki, where I honed
           problem-solving skills, optimized code, and embraced software design
@@ -36,7 +37,7 @@ const AboutMeSection = () => {
           React.js,
           <br />I equally excel in backend technologies, including Node.js,
           Express, MongoDB, REST API, GraphQL, Sanity, JSON, and Redux
-          Toolkit/Query.
+          Toolkit/Query. */}
         </p>
       </h4>
     </div>

@@ -1,0 +1,24 @@
+{
+  "navbar": ["home", "about", "work", "projects", "education", "contact"],
+  "header": {
+    "intro": "Hello, I am",
+    "name": "Kujtim",
+    "title": ["Full Stack Developer"]
+  },
+  "about": {
+    "intro": "I Know That <span> Good Design </span> <br /> means <span> Good Business</span>",
+    "header": "About me",
+    "me": "I embarked on my coding journey in 2022 with no prior experience. <br /> My foundation was forged at Hive Helsinki, where I honed problem-solving skills, optimized code, and embraced software design principles. <br /> <br /> As an aspiring Full Stack Developer, I recently completed the Full Stack Open Course at the University of Helsinki. <br /> <br /> Proficient in frontend technologies like HTML, CSS, JavaScript, and React.js, <br />I equally excel in backend technologies, including Node.js, Express, MongoDB, REST API, GraphQL, Sanity, JSON, and Redux Toolkit/Query."
+  },
+  "projects": {
+    "header": "My <span>Projects</span>",
+    "shownProjects": [
+      "UI/UX",
+      "Games",
+      "Graphics",
+      "Algorithms",
+      "React JS",
+      "All"
+    ]
+  }
+}
