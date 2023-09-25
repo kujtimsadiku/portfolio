@@ -12,6 +12,7 @@ import "react-tooltip/dist/react-tooltip.css";
 const EducationComp = () => {
   const [education, setEducation] = useState([]);
   const [skills, setSkills] = useState([]);
+
   useEffect(() => {
     const expQuery = `*[_type == "education"]`;
     const skillsQuery = `*[_type == "skills"]`;
@@ -25,6 +26,7 @@ const EducationComp = () => {
       setSkills(data);
     });
   }, []);
+
   return (
     <>
       <h2 className="head-text">Education & Skills</h2>

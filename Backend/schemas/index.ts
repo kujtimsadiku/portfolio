@@ -7,7 +7,7 @@ import contact from './contact'
 import education from './education'
 import educationExp from './educationExp'
 
-export const schemaTypesEN = [
+export const schemaTypes = [
   projects,
   abouts,
   skills,

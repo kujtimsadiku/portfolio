@@ -4,40 +4,24 @@ import { motion } from "framer-motion";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 import { urlFor, client } from "../../client";
-import { useTranslation } from "react-i18next";
+import { Trans, useTranslation } from "react-i18next";
 
 import "./About.scss";
 
 const AboutMeSection = () => {
+  const { t, i18n } = useTranslation();
+
   return (
     <div className="app__about-me">
       <h2 className="head-text">
-        I Know That
-        <span> Good Design </span>
-        <br />
-        means
-        <span> Good Business</span>
+        "I Know That <span> Good Design </span> <br /> means
+        <span> Good Business</span>"
       </h2>
 
       <h4 className="head-text">
+        {t("about.header")}
         <p className="p-text">
-          {/* {t.} */}
-          {/* I embarked on my coding journey in 2022 with no prior experience.
-          <br />
-          My foundation was forged at Hive Helsinki, where I honed
-          problem-solving skills, optimized code, and embraced software design
-          principles.
-          <br />
-          <br />
-          As an aspiring Full Stack Developer, I recently completed the Full
-          Stack Open Course at the University of Helsinki.
-          <br />
-          <br />
-          Proficient in frontend technologies like HTML, CSS, JavaScript, and
-          React.js,
-          <br />I equally excel in backend technologies, including Node.js,
-          Express, MongoDB, REST API, GraphQL, Sanity, JSON, and Redux
-          Toolkit/Query. */}
+          <Trans>{t("about.me")}</Trans>
         </p>
       </h4>
     </div>

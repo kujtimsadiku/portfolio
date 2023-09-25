@@ -4,9 +4,11 @@ import { HiMenuAlt4, HiX } from "react-icons/hi";
 import { motion } from "framer-motion";
 
 import "./Navbar.scss";
+import { useTranslation } from "react-i18next";
 
 const Navbar = () => {
   const [toggle, setToggle] = useState(false);
+  const { t, i18n } = useTranslation();
 
   return (
     <nav className="app__navbar">
@@ -14,15 +16,15 @@ const Navbar = () => {
         <img src={images.kujtim} alt="logo" />
       </div>
       <ul className="app__navbar-links">
-        {["home", "about", "projects", "educations", "work", "contact"].map(
-          (item) => (
-            <li className="app__flex p-text" key={`link-${item}`}>
-              <div />
-              <a href={`#${item}`}>{item}</a>
-            </li>
-          )
-        )}
+        {t("navbar", { returnObjects: true }).map((item) => (
+          <li className="app__flex p-text" key={`link-${item}`}>
+            <div />
+            <a href={`#${item}`}>{item}</a>
+          </li>
+        ))}
       </ul>
+      {/* 2 flags en and fin for translation */}
+      {/* <button className="app__navbar-lang">LANG</button> */}
       {/* <button className="app__navbar-lang">LANG</button> */}
       <div className="app__navbar-menu">
         <HiMenuAlt4 onClick={() => setToggle(true)} />
@@ -34,14 +36,7 @@ const Navbar = () => {
           >
             <HiX onClick={() => setToggle(false)} />
             <ul>
-              {[
-                "home",
-                "about",
-                "work",
-                "projects",
-                "education",
-                "contact",
-              ].map((item) => (
+              {t("navbar", { returnObjects: true }).map((item) => (
                 <li key={item}>
                   <a href={`#${item}`} onClick={() => setToggle(false)}>
                     {item}

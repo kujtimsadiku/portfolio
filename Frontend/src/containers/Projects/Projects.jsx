@@ -6,12 +6,16 @@ import { AppWrap, MotionWrap } from "../../wrapper";
 import { urlFor, client } from "../../client";
 
 import "./Projects.scss";
+import { useTranslation } from "react-i18next";
 
 const ProjectsComp = () => {
   const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimatedCard] = useState({ y: 0, opacity: 1 });
   const [projects, setProjects] = useState([]);
   const [filterProject, setFilterProject] = useState([]);
+
+  const { t, i18n } = useTranslation();
+  const pro = t("projects.fields");
 
   useEffect(() => {
     const query = `*[_type == "projects"]`;
@@ -45,19 +49,17 @@ const ProjectsComp = () => {
         My <span>Projects</span>
       </h2>
       <div className="app__projects-filter">
-        {["UI/UX", "Games", "Graphics", "Algorithms", "React JS", "All"].map(
-          (item, index) => (
-            <div
-              key={index}
-              onClick={() => handleWorkFilter(item)}
-              className={`app__project-filter-item app__flex p-text ${
-                activeFilter === item ? "item-active" : ""
-              }`}
-            >
-              {item}
-            </div>
-          )
-        )}
+        {t("projects.fields", { returnObjects: true }).map((item, index) => (
+          <div
+            key={index}
+            onClick={() => handleWorkFilter(item)}
+            className={`app__project-filter-item app__flex p-text ${
+              activeFilter === item ? "item-active" : ""
+            }`}
+          >
+            {item}
+          </div>
+        ))}
       </div>
       <motion.div
         animate={animateCard}
