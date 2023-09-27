@@ -7,6 +7,7 @@ import emailjs from "emailjs-com";
 // import { client } from "../../client";
 
 import "./Footer.scss";
+import { useTranslation } from "react-i18next";
 
 const FooterComp = () => {
   const [formData, setFormData] = useState({
@@ -18,6 +19,7 @@ const FooterComp = () => {
   const [loading, setLoading] = useState(false);
 
   const { name, email, message } = formData;
+  const { t } = useTranslation();
 
   const handleChangeInput = (event) => {
     const { name, value } = event.target;
@@ -28,6 +30,8 @@ const FooterComp = () => {
   const handleSUBMIT = () => {
     setLoading(true);
 
+    // ---- To set these you need to create .env file and add values from emailjs
+    // ---- or make them public and write them straight to here (Not reccomended).
     const PUBLIC_KEY = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
     const SERVICE_ID = import.meta.env.VITE_REACT_APP_SERVICE_ID;
     const TEMPLATE_ID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID;
@@ -71,13 +75,13 @@ const FooterComp = () => {
         <div className="app__footer-card">
           <img src={images.email} alt="email" />
           <a href="mailto:kuite.s@hotmail.com" className="p-text">
-            kuite.s@hotmail.com
+            {t("footer.email")}
           </a>
         </div>
         <div className="app__footer-card">
           <img src={images.mobile} alt="mobile" />
           <a href="tel: +358445814545" className="p-text">
-            +358 44 58 14545
+            {t("footer.telephone")}
           </a>
         </div>
       </div>
@@ -118,7 +122,7 @@ const FooterComp = () => {
         </div>
       ) : (
         <div>
-          <h2 className="head-text">Thank you for getting in touch!</h2>
+          <h2 className="head-text">{t("footer.thankful")}</h2>
         </div>
       )}
     </React.Fragment>

@@ -11,5 +11,10 @@
   },
   "projects": {
     "fields": ["UI/UX", "Games", "Graphics", "Algorithms", "React JS", "All"]
+  },
+  "footer": {
+    "telephone": "+358 44 58 14545",
+    "email": "kuite.s@hotmail.com",
+    "thankful": "Thank you for getting in touch!"
   }
 }
