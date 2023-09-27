@@ -9,13 +9,13 @@ import { Trans, useTranslation } from "react-i18next";
 import "./About.scss";
 
 const AboutMeSection = () => {
-  const { t, i18n } = useTranslation();
+  const { t } = useTranslation();
 
   return (
     <div className="app__about-me">
       <h2 className="head-text">
-        "I Know That <span> Good Design </span> <br /> means
-        <span> Good Business</span>"
+        I Know That <span> Good Design </span> <br /> means
+        <span> Good Business</span>
       </h2>
 
       <h4 className="head-text">

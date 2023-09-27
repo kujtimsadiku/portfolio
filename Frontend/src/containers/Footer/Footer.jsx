@@ -2,7 +2,9 @@ import React, { useState } from "react";
 
 import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
-import { client } from "../../client";
+
+import emailjs from "emailjs-com";
+// import { client } from "../../client";
 
 import "./Footer.scss";
 
@@ -26,17 +28,38 @@ const FooterComp = () => {
   const handleSUBMIT = () => {
     setLoading(true);
 
+    const PUBLIC_KEY = import.meta.env.VITE_REACT_APP_PUBLIC_KEY;
+    const SERVICE_ID = import.meta.env.VITE_REACT_APP_SERVICE_ID;
+    const TEMPLATE_ID = import.meta.env.VITE_REACT_APP_TEMPLATE_ID;
+    const EMAIL = import.meta.env.VITE_REACT_APP_EMAIL;
+
     const contact = {
-      _type: "contact",
+      to_email: EMAIL,
       name: name,
       email: email,
       message: message,
     };
 
-    client.create(contact).then(() => {
+    // ---- 200 emails monthly for free ----
+    emailjs.send(SERVICE_ID, TEMPLATE_ID, contact, PUBLIC_KEY).then(() => {
       setLoading(false);
       setIsFormSubmitted(true);
     });
+
+    // ---- This is for saving into the backend.
+    // ---- Not recommended because you would always need to go and
+    // ---- check from sanity if you have received an email
+    // ---- Let's still keep this.
+    // const contact = {
+    //   name: name,
+    //   email: email,
+    //   message: message,
+    // };
+
+    // client.create(contact).then(() => {
+    //   setLoading(false);
+    //   setIsFormSubmitted(true);
+    // });
   };
 
   return (

@@ -14,8 +14,7 @@ const ProjectsComp = () => {
   const [projects, setProjects] = useState([]);
   const [filterProject, setFilterProject] = useState([]);
 
-  const { t, i18n } = useTranslation();
-  const pro = t("projects.fields");
+  const { t } = useTranslation();
 
   useEffect(() => {
     const query = `*[_type == "projects"]`;
