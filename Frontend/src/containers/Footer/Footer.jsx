@@ -4,7 +4,6 @@ import { images } from "../../constants";
 import { AppWrap, MotionWrap } from "../../wrapper";
 
 import emailjs from "emailjs-com";
-// import { client } from "../../client";
 
 import "./Footer.scss";
 import { useTranslation } from "react-i18next";
