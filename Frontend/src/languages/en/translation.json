@@ -7,7 +7,7 @@
   },
   "about": {
     "header": "About me",
-    "me": "I embarked on my coding journey in 2022 with no prior experience. <br /> My foundation was forged at Hive Helsinki, where I honed problem-solving skills, optimized code, and embraced software design principles. <br /> <br /> As an aspiring Full Stack Developer, I recently completed the Full Stack Open Course at the University of Helsinki. <br /> <br /> Proficient in frontend technologies like HTML, CSS, JavaScript, and React.js, <br />I equally excel in backend technologies, including Node.js, Express, MongoDB, REST API, GraphQL, Sanity, JSON, and Redux Toolkit/Query."
+    "me": "I started learning how to code in 2022 without any experience.<br />My coding skills were developed at Hive Helsinki, where I learned problem solving techniques, optimized code and embraced software design principles.<br /><br />As someone aspiring to become a Full Stack Developer I recently finished the Full Stack Open Course offered by the University of Helsinki.<br /><br />When it comes to frontend technologies, like HTML, CSS, JavaScript and React.js I have a grasp on them. Additionally I am proficient in technologies such, as Node.js, Express, MongoDB, REST API, GraphQL, Sanity CMS system, JSON and Redux Toolkit/Query."
   },
   "projects": {
     "fields": ["UI/UX", "Games", "Graphics", "Algorithms", "React JS", "All"]
