@@ -68,7 +68,7 @@ const AboutComp = () => {
 };
 
 export const About = AppWrap(
-  MotionWrap(AboutComp, "app_about"),
+  MotionWrap(AboutComp, "app__about"),
   "about",
   "app__whitebg"
 );
