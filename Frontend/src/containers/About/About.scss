@@ -22,16 +22,14 @@
 
   p {
     margin: 1.25rem 1.25rem 0 0;
-    max-height: 200px;
+    max-height: none;
     max-width: 500px;
-    overflow: auto;
-    text-align: flex-start;
+    text-align: start;
     text-transform: none;
   }
 
   @media screen and (max-width: 450px) {
     p {
-      max-height: none;
       overflow: visible;
       text-align: center;
     }
